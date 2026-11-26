@@ -4,27 +4,50 @@
 
 /* the whole panel */
 .tasksPanel {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
 
 /* the title with the member name */
 .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 12px;
 }
 
 /* the list of tasks */
 .tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
 }
 
 /* one task */
 .task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
 }
 
 /* a done task (e.g. line-through) */
 .done {
+  text-decoration: line-through;
+  color: #9ca3af;
 }
 
 /* the messages "Select a member..." / "No tasks yet" */
 .empty {
+  color: #6b7280;
+  font-style: italic;
 }
+
 
 /* bonus: the done/total counter */
 .counter {
